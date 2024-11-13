@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --blue: rgb(7, 50, 66);
   --blue-light: rgba(35, 102, 153, 0.1);
@@ -151,3 +152,155 @@ figcaption {
 
 
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #264a73;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.5em;
+}
+
+header .highlight {
+  color: #ffd700;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+/* About Me Section */
+.about-me {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 2em;
+  width: 55%;
+}
+
+.about-me h2 {
+  background-color: #264a73;
+  color: #ffffff;
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.web-resources {
+  background-color: #ffffff;
+  border: 0.5px solid #cccccc;
+  padding: 2rem;
+  width: 35%;
+}
+
+.web-resources h2 {
+  background-color: #264a73;
+  color: #ffffff;
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+.about-me img {
+  width: 75%;
+  max-width: 200px;
+  vertical-align: middle;
+}
+ .wrapper{
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+ }
+
+ .intro{
+  flex:1;
+
+ }
+.about-me h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.about-me p {
+  margin: 0.5em 0;
+  text-align: justify;
+}
+
+/* Web Dev Resources Section */
+.web-resources ul {
+  list-style: 2%;
+  padding: 0;
+  justify-items: right;
+}
+
+.web-resources li {
+  margin: 0.5em 0;
+}
+
+.web-resources a {
+  color: #553582;
+  text-decoration: none;
+}
+
+.web-resources a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Footer */
+footer {
+  background-color: #264a73;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer .highlight {
+  color: #ffd700;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+>>>>>>> 60853a08d84584544478433d0ea92b749671884a
