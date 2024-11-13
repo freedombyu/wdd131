@@ -1,0 +1,8 @@
+/* Adjust grid for larger screens */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header, footer {
+    padding: 1.5rem 2rem;
+}
