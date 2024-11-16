@@ -109,7 +109,5 @@ footer p {
     margin: 0.5rem 0;
 }
 
-/* Additional Styles for Mobile Menu */
-nav ul.show {
-    display: block; /* Display menu when toggled */
-}
+
+
