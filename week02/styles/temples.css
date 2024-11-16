@@ -1,64 +1,86 @@
-/* Basic reset */
-* {
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-/* Header */
+/* Header and Navigation */
 header {
+    background-color: #1c2964;
+    color: #fff;
+    padding: 0.5rem;
     display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
 }
 
 header h1 {
-    margin: 1.5em;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    display: inline-flex ;
 }
 
-nav a {
-    color: white;
-    margin: none;
-    text-decoration: center;
+.hamburger-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
 
-nav a:hover {
+nav ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;     
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 1.5rem ;
+    position: relative;
+    left: 200px    
+}
+
+/* Show menu items on hover */
+nav ul li a:hover {
     text-decoration: underline;
-}
+    color: yellow;
+   }
 
 /* Main content */
 main {
     padding: 1rem;
-    text-align: center;
+    text-align: center;    
 }
 
-.gallery {
+.temple-gallery {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.temple-card {
-    text-align: column 3;
+figure {
+    margin: 0;
 }
 
-.temple-card img {
+figure img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
 }
 
-/* Footer */
 footer {
-    background-color: #4B0082;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: #1c2964;
+    color: #fff;
+    padding: 0.5rem;
 }
 
+footer p {
+    margin: 0.5rem 0;
+}

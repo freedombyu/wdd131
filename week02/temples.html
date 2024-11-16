@@ -3,94 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temples</title>
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="styles/temples.js">
-
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
-
-    <!-- Header section with site title and navigation -->
     <header>
-        <h1>Temples Around the World</h1>
+        <h1>Temple Album</h1>
+        <button id="menu-toggle" class="hamburger-menu">☰</button>
         <nav>
-            <a href="#">Home</a></li>
-            <a href="#">Old</a></li>
-            <a href="#">New</a></li>
-            <a href="#">Large</a></li>
-            <a href="#">Small</a></li>
-        </nav>
-        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-            <ul>
-            
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
             </ul>
-
-
-    </header>
-
-    <!-- Main section with heading and temple figure elements -->
+        </nav>
+    </header>    
     <main>
-        <h2>Featured Temples</h2>
-        <div class="temples-grid">
-            <!-- Add 9 temple figures -->
+        <h2>Home</h2>
+        <section class="temple-gallery">
             <figure>
-                <img src="path/to/temple1.jpg" alt="Temple 1">
-                <figcaption>Temple 1 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple1.jpg" alt="Temple 1">
-                <figcaption>Temple 1 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple1.jpg" alt="Temple 1">
-                <figcaption>Temple 1 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
             </figure>
-
             <figure>
-                <img src="path/to/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple 2 Name</figcaption>
-            </figure>
-
-
-            
-        </div>
-    </main>
-
-    <!-- Footer section -->
+                <img src="images/temples.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California</figcaption>
+            </figure>            
+        </section>
+    </main>    
     <footer>
-        <p>&copy; <span id="year"></span> Your Site Name. All rights reserved.</p>
-        <p>Last modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="year"></span> Freedom Mukanza | South Africa</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
-
-    <!-- Link to the JavaScript file -->
-    <script src="scripts/temples.js" defer></script>
 </body>
 </html>

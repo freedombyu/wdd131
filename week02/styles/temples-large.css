@@ -1,8 +1,20 @@
-/* Adjust grid for larger screens */
-.gallery {
-    grid-template-columns: repeat(3, 1fr);
+/* Large view styles */
+nav ul {
+    display: flex;
+    justify-content: center;
 }
 
-header, footer {
-    padding: 1.5rem 2rem;
+.hamburger-menu {
+    display: none;
 }
+
+.temple-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
