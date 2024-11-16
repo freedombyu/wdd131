@@ -1,71 +1,87 @@
-/* General styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
     box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 /* Header and Navigation */
 header {
     background-color: #1c2964;
     color: #fff;
-    padding: 0.5rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 header h1 {
     margin: 0;
-    display: flex;
-    text-align: center;
-    display: inline-flex ;
+    font-size: 1.8rem;
 }
 
 .hamburger-menu {
-    display: block;
     background: none;
     border: none;
     color: #fff;
+    font-size: 1.8rem;
     cursor: pointer;
+    display: block;
 }
 
 nav ul {
-    display: none;
+    display: none; /* Initially hidden for mobile view */
     list-style: none;
+    margin: 0;
     padding: 0;
-    margin: 0;     
+    background-color: #1c2964;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    border: 1px solid #333;
 }
 
 nav ul li {
-    margin: 0.5rem 0;
+    text-align: left;
 }
 
 nav ul li a {
+    display: block;
     color: #fff;
     text-decoration: none;
-    justify-content: space-between;
-    padding: 1.5rem ;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #333;
 }
 
-/* Show menu items on hover */
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #333;
     color: yellow;
-   }
+}
 
-/* Main content */
+/* Main Content */
 main {
     padding: 1rem;
-    text-align: center;    
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .temple-gallery {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 figure {
     margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 figure img {
@@ -73,12 +89,27 @@ figure img {
     height: auto;
 }
 
+figure figcaption {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Footer */
 footer {
     background-color: #1c2964;
     color: #fff;
-    padding: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
 
 footer p {
     margin: 0.5rem 0;
+}
+
+/* Additional Styles for Mobile Menu */
+nav ul.show {
+    display: block; /* Display menu when toggled */
 }

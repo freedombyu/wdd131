@@ -1,20 +1,20 @@
-/* Large view styles */
-nav ul {
-    display: flex;
-    justify-content: center;
-}
+/* Show navigation for larger screens */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 1rem;
+        width: auto;
+        border: none;
+    }
 
-.hamburger-menu {
-    display: none;
-}
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border: none;
+    }
 
-.temple-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    .hamburger-menu {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
 }
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
