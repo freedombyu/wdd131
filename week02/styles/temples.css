@@ -46,8 +46,6 @@ nav ul li a {
     text-decoration: none;
     justify-content: space-between;
     padding: 1.5rem ;
-    position: relative;
-    left: 200px    
 }
 
 /* Show menu items on hover */
