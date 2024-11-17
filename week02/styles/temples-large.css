@@ -1,20 +1,11 @@
-/* Show navigation for larger screens */
+/* Responsive styles for larger screens */
 @media screen and (min-width: 768px) {
     nav ul {
         display: flex;
-        position: static;
-        flex-direction: row;
         gap: 1rem;
-        width: auto;
-        border: none;
-    }
-
-    nav ul li a {
-        padding: 0.5rem 1rem;
-        border: none;
     }
 
     .hamburger-menu {
-        display: none; /* Hide hamburger menu on larger screens */
+        display: none;
     }
 }
