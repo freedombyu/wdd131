@@ -1,0 +1,8 @@
+/* Mobile Navigation Toggle */
+nav ul.hidden {
+    display: none; /* Keep hidden when class "hidden" is applied */
+}
+
+nav ul.show {
+    display: block;
+}

@@ -1,14 +1,21 @@
-// Toggle navigation menu
-document.getElementById('menu-toggle').addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
-    navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
-});
+    const yearSpan = document.getElementById('year');
+    const lastModifiedSpan = document.getElementById('last-modified');
+    const templeGrid = document.querySelector('.res-grid');
 
-// Set current year in the footer
-document.getElementById('year').textContent = new Date().getFullYear();
+    // Toggle navigation menu
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+    });
 
-// Set last modified date in the footer
-document.getElementById('last-modified').textContent = document.lastModified;
+    // Set current year in the footer
+    yearSpan.textContent = new Date().getFullYear();
+
+    // Set last modified date in the footer
+    lastModifiedSpan.textContent = document.lastModified;
+
 
 const temples = [
     {
@@ -21,7 +28,7 @@ const temples = [
     },
     {
       templeName: "Manti Utah",
-      location: "Manti, Utah, United States",
+      location: "Manti, United States",
       dedicated: "1888, May, 21",
       area: 74792,
       imageUrl:
@@ -29,7 +36,7 @@ const temples = [
     },
     {
       templeName: "Payson Utah",
-      location: "Payson, Utah, United States",
+      location: "Payson, United States",
       dedicated: "2015, June, 7",
       area: 96630,
       imageUrl:
@@ -45,7 +52,7 @@ const temples = [
     },
     {
       templeName: "Washington D.C.",
-      location: "Kensington, Maryland, United States",
+      location: "Maryland, United States",
       dedicated: "1974, November, 19",
       area: 156558,
       imageUrl:
@@ -60,6 +67,15 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
+      templeName: "Sapporo Japan",
+      location: "Sapporo, Japan",
+      dedicated: "2016, August, 21",
+      area: 426888,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
+    },
+    {
+      
       templeName: "Mexico City Mexico",
       location: "Mexico City, Mexico",
       dedicated: "1983, December, 2",
@@ -73,23 +89,18 @@ const temples = [
         dedicated: "2004, January, 11",
         area: 10800,
         imageUrl:
-          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-lds-234567.jpg"
-      },
-      {
-        templeName: "Rome Italy",
-        location: "Rome, Italy",
-        dedicated: "2019, March, 10",
-        area: 40000,
-        imageUrl:
-          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-lds-345678.jpg"
-      },
-      {
-        templeName: "Seoul Korea",
-        location: "Seoul, South Korea",
-        dedicated: "1985, December, 14",
-        area: 12500,
-        imageUrl:
-          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-456789.jpg"
-      }
-      
+          "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-detail-249022-2400x1200.jpg"
+      },      
   ];
+  temples.forEach(temple => {
+    const section = document.createElement('section');
+    section.innerHTML = `
+        <h3>${temple.templeName}</h3>
+        <p><span class="label">Location:</span> ${temple.location}</p>
+        <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
+        <p><span class="label">Area:</span> ${temple.area} sq ft</p>
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+    `;
+    templeGrid.appendChild(section);
+});
+});
