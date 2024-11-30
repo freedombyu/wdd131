@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Freedom Mukanza | Picture Album">
+    <meta name="author" content="Freedom Mukanza">  
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+      <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button class="hamburger-menu" aria-label="Menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li id="home">Home</li>
+        <li id="old">Old</li>
+        <li id="new">New</li>
+        <li id="large">Large</li>
+        <li id="small">Small</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="temples-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Freedom Mukanza | South Africa</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>  
+</body>
+</html>
