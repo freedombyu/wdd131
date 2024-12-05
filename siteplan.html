@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Site Name]</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Freedom Mukanza | Picture Album">
+    <meta name="author" content="Freedom Mukanza">  
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">[Your Logo]</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to [Your Site Name]</h1>
+            <p>Your go-to place for [specific services or information]</p>
+            <button class="cta">Learn More</button>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide [details about the purpose of your site].</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Explore our offerings to cater to your needs.</p>
+        </section>
+        <section id="blog">
+            <h2>Blog & News</h2>
+            <p>Stay updated with our latest articles and updates.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Find answers to your common questions.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> [Your Site Name]. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
