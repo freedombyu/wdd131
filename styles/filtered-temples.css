@@ -1,73 +1,84 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
 header {
-  background-color:  #211fbd;
-  color: white;
-  padding: 10px 20px;
+  background-color: #1c2964;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 header h1 {
   margin: 0;
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 15px;
-}
-
-header nav ul li {
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 
-header nav ul li:hover {
-  text-decoration: underline;
-  color: yellow;
-}
-
-.hamburger-menu {
+nav ul {
   display: none;
-  font-size: 24px;
-  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+
+nav ul li:hover {
+  text-decoration: underline;
+color: yellow;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: block;
   background: none;
   border: none;
+  color: #fff;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
+
 main {
-  padding: 20px;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
 
-/* Temples Grid */
 .temples-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 900px; /* Ensures a maximum of 3 images per row */
 }
 
 .temple-card {
-  border: 1px solid #242121;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .temple-card img {
@@ -76,35 +87,17 @@ main {
 }
 
 footer {
-  background-color: #211fbd;
-  color: white;
+  background-color: #1c2964;
+  color: #fff;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+  padding: 1rem;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  header nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #4a148c;
-    padding: 10px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    border-radius: 0 0 8px 8px;
-  }
-
-  header nav ul li {
-    padding: 10px;
-  }
-
-  .hamburger-menu {
-    display: block;
-  }
-
-  header.nav-active ul {
-    display: flex;
-  }
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
+
+
+
+
