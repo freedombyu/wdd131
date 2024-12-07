@@ -3,74 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Site Name]</title>
+    <title>TechWave Solutions</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Freedom Mukanza | Picture Album">
     <meta name="author" content="Freedom Mukanza">  
     <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">[Your Logo]</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </nav>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <header class="header">
+        <div class="container">
+            <div class="logo">TechWave Solutions</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#Home">Home</a></li>                    
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>                
+        <button class="hamburger" onclick="toggleMenu()">☰</button>            
     </header>
-    <main>
-        <section id="home" class="hero">
-            <h1>Welcome to [Your Site Name]</h1>
-            <p>Your go-to place for [specific services or information]</p>
-            <button class="cta">Learn More</button>
+
+    <main class="main">
+        <section id="intro" class="intro">
+            <div class="container">
+                <h1>Welcome to TechWave Solutions</h1>
+                <p>Innovative and professional IT solutions tailored for your business.</p>
+            </div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We provide [details about the purpose of your site].</p>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">IT Consulting</div>
+                <div class="service-item">Custom Software Development</div>
+                <div class="service-item">Cloud Integration</div>
+            </div>
         </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Explore our offerings to cater to your needs.</p>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>TechWave Solutions is dedicated to providing cutting-edge IT services and exceptional customer support. Learn more about our team and projects.</p>
+            </div>
         </section>
-        <section id="blog">
-            <h2>Blog & News</h2>
-            <p>Stay updated with our latest articles and updates.</p>
+
+        <section id="scenarios" class="scenarios">
+            <div class="container">
+                <h2>Visitor Questions</h2>
+                <div class="scenario-item">
+                    <p><strong>Question:</strong> What IT consulting services does TechWave Solutions offer, and how can they help my business?</p>
+                    <p><strong>Answer:</strong> We provide expert IT consulting services, including infrastructure setup, system optimization, and strategic planning to help your business thrive in a digital environment.</p>
+                </div>
+                <div class="scenario-item">
+                    <p><strong>Question:</strong> How can I contact TechWave Solutions for a project consultation?</p>
+                    <p><strong>Answer:</strong> You can contact us through the contact form on this website or by calling our support team directly. Visit the <a href="#contact">Contact</a> section for more details.</p>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        <section id="faq">
-            <h2>FAQ</h2>
-            <p>Find answers to your common questions.</p>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; <span id="year"></span> [Your Site Name]. All Rights Reserved.</p>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media">Follow us: 
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="copyright">&copy; <span id="year"></span> TechWave Solutions. All Rights Reserved.</div>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
