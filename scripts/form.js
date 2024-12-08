@@ -37,11 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     productSelect.appendChild(option);
   });
 
-  // Initialize and display the review counter
-  const reviewCounter = document.getElementById('reviewCounter');
-  const reviewCount = localStorage.getItem('reviewCount') || 0;
-  reviewCounter.textContent = `Total Reviews Submitted: ${reviewCount}`;
-
   // Handle form submission
   const reviewForm = document.getElementById('reviewForm');
   reviewForm.addEventListener('submit', (e) => {
@@ -60,12 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Review submitted:', reviewData);
     alert(`Thank you for reviewing the ${selectedProduct.name}!`);
-
-    // Update review count in localStorage
-    const newReviewCount = parseInt(localStorage.getItem('reviewCount') || 0) + 1;
-    localStorage.setItem('reviewCount', newReviewCount);
-    reviewCounter.textContent = `Total Reviews Submitted: ${newReviewCount}`;
-
     reviewForm.reset();
   });
 

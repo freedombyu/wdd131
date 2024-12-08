@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <h1>Product Review</h1>
+    <h1>Submit Your Review</h1>
   </header>
 
   <main>
@@ -42,13 +42,13 @@
       </fieldset>
 
       <label for="review">Written Review (Optional)</label>
-      <textarea id="review" name="review" rows="5"></textarea>
+      <textarea id="review" name="review" placeholder="Write your review here..."></textarea>
 
       <label for="name">Your Name (Optional)</label>
-      <input type="text" id="name" name="name">
-      <div id="reviewCounter" style="font-weight: bold; margin-top: 1rem;">Total Reviews Submitted: 0</div>
+      <input type="text" id="name" name="name" placeholder="Optional">
       <button type="submit">Post Review</button>
     </form>
+    <p id="reviewCount">You have submitted 0 reviews so far.</p>
   </main>
 
   <footer>
