@@ -3,94 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechWave Solutions</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Freedom Mukanza | Picture Album">
-    <meta name="author" content="Freedom Mukanza">  
+    <meta name="description" content="Professional IT solutions by TechWave Solutions.">
+    <meta name="keywords" content="IT, consulting, technology, TechWave Solutions">
+
+    <title>Site Plan</title>
     <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">TechWave Solutions</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#Home">Home</a></li>                    
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>                
-        <button class="hamburger" onclick="toggleMenu()">☰</button>            
+    <header>
+        <h1>Site Plan</h1>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#site-purpose">Purpose</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#color-schema">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#wireframe">Wireframe</a>
+        </nav>
+        
     </header>
+    
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <h2><i class="fas fa-palette"></i> Color Schema</h2>
 
-    <main class="main">
-        <section id="intro" class="intro">
-            <div class="container">
-                <h1>Welcome to TechWave Solutions</h1>
-                <p>Innovative and professional IT solutions tailored for your business.</p>
-            </div>
+            <p><strong>Selected Name:</strong> TechWave Solutions</p>
+            <p>This name was chosen because it reflects the dynamic and innovative nature of the IT solutions provided by the organization. It conveys a sense of cutting-edge technology and professionalism.</p>
+            <p><strong>Optional Domain Availability:</strong> techwave-solutions.com</p>
         </section>
 
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-item">IT Consulting</div>
-                <div class="service-item">Custom Software Development</div>
-                <div class="service-item">Cloud Integration</div>
-            </div>
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of this website is to showcase the services and expertise of TechWave Solutions. It will provide information about the company, the services offered, key projects, and contact details. The site will also include a section for potential clients to request consultations and testimonials from satisfied customers.</p>
         </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>TechWave Solutions is dedicated to providing cutting-edge IT services and exceptional customer support. Learn more about our team and projects.</p>
-            </div>
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What IT consulting services does TechWave Solutions offer?</li>
+                <li>How can I contact TechWave Solutions for a project consultation?</li>
+            </ul>
         </section>
 
-        <section id="scenarios" class="scenarios">
-            <div class="container">
-                <h2>Visitor Questions</h2>
-                <div class="scenario-item">
-                    <p><strong>Question:</strong> What IT consulting services does TechWave Solutions offer, and how can they help my business?</p>
-                    <p><strong>Answer:</strong> We provide expert IT consulting services, including infrastructure setup, system optimization, and strategic planning to help your business thrive in a digital environment.</p>
-                </div>
-                <div class="scenario-item">
-                    <p><strong>Question:</strong> How can I contact TechWave Solutions for a project consultation?</p>
-                    <p><strong>Answer:</strong> You can contact us through the contact form on this website or by calling our support team directly. Visit the <a href="#contact">Contact</a> section for more details.</p>
-                </div>
-            </div>
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <ul>
+                <li><strong>Primary Color:</strong> #0044cc (Used for headers, navigation background, and call-to-action buttons.)</li>
+                <li><strong>Secondary Color:</strong> #f0f0f0 (Used for the main background and section dividers.)</li>
+            </ul>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section id="typography">
+            <h2>Typography</h2>
+            <ul>
+                <li><strong>Heading Font:</strong> Arial, sans-serif (Used for all headers.)</li>
+                <li><strong>Body Font:</strong> Georgia, serif (Used for paragraphs and general content.)</li>
+            </ul>
+        </section>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>The wireframe diagrams for the home page layout are as follows:</p>
+            <h3>Mobile View</h3>
+            <p>A simplified stacked layout with a collapsible menu at the top, followed by the logo, a call-to-action section, and the footer.</p>
+            <h3>Desktop View</h3>
+            <p>A more expansive layout with a navigation bar, a hero image, a three-column section for services, and the footer at the bottom.</p>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="social-media">Follow us: 
-                <a href="#">Facebook</a> |
-                <a href="#">Twitter</a> |
-                <a href="#">LinkedIn</a>
-            </div>
-            <div class="copyright">&copy; <span id="year"></span> TechWave Solutions. All Rights Reserved.</div>
-        </div>
+    <footer>
+        <form>
+            <label for="email">Subscribe to Updates:</label>
+            <input type="email" id="email" placeholder="Your Email">
+            <button type="submit">Subscribe</button>
+        </form>
+        
+        <p>&copy; 2024 TechWave Solutions</p>
     </footer>
 </body>
 </html>
