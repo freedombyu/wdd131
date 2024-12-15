@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hero Section Background Slider
   const heroSection = document.getElementById("hero");
   const images = [
-      "images/slide-img-1.avif",
-      "images/slide-img-2.jpeg",
-      "images/slide-img-3.jpg",
+      "images/slide-img1.jpeg",
+      "images/slide-img2.jpg",
+      "images/slide-img3.jpg",
   ];
   let currentIndex = 0;
 
