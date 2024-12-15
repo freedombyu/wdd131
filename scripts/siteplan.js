@@ -1,8 +1,10 @@
 // JavaScript for TechWave Solutions Website
 
-// Update footer year dynamically
+// Set current year in the footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Set last modified date in the footer
+document.getElementById('last-modified').textContent = document.lastModified;
 // Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
