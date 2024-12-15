@@ -5,89 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional IT solutions by TechWave Solutions.">
     <meta name="keywords" content="IT, consulting, technology, TechWave Solutions">
-    <title>Site Plan</title>
+    <title>TechWave Solutions | Empowering Businesses with IT Innovation</title>
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="images/pexels-photo-1181354.jpeg">
     <link rel="stylesheet" href="styles/siteplan-large.css" media="screen and (min-width: 768px)">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
+
 <body>
     <header>
-        <header>
-            <nav class="navbar">
+        <nav class="navbar">
             <div class="logo">TechWave Solutions</div>
-            <button class="hamburger" aria-label="Toggle Navigation">
-                &#9776;
-            </button>
+            <button class="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+
             <ul class="nav-links">
-                <a href="#index">Home</a>
-                <a href="#site-purpose">Purpose</a>
-                <a href="#scenarios">Scenarios</a>
-                <a href="#color-schema">Colors</a>
-                <a href="#typography">Typography</a>
-                <a href="#wireframe">Wireframe</a>
-            </nav>
-        </header>        
-    
+                <li><a href="siteplan.html" class="active">Home</a></li>                
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section id="site-name">
-            <h2>Site Name</h2>
-            <h2><i class="fas fa-palette"></i> Color Schema</h2>
-
-            <p><strong>Selected Name:</strong> TechWave Solutions</p>
-            <p>This name was chosen because it reflects the dynamic and innovative nature of the IT solutions provided by the organization. It conveys a sense of cutting-edge technology and professionalism.</p>
-            <p><strong>Optional Domain Availability:</strong> techwave-solutions.com</p>
+        <section class="hero" style="background-image: url('images/pexels-photo-1181354.jpeg');">
+            <h1>Welcome to TechWave Solutions</h1>
+            <p>Empowering businesses with cutting-edge IT solutions.</p>
+            <a href="services.html" class="cta">Discover Our Services</a>
         </section>
 
-        <section id="site-purpose">
-            <h2>Site Purpose</h2>
-            <p>The purpose of this website is to showcase the services and expertise of TechWave Solutions. It will provide information about the company, the services offered, key projects, and contact details. The site will also include a section for potential clients to request consultations and testimonials from satisfied customers.</p>
-        </section>
+        <section class="features">
+            <div class="feature">
+                <img src="images/consitation.jpg" alt="Expert Consulting">
+                <h2>Expert Consulting</h2>
+                <p>Tailored IT strategies to drive your business forward.</p>
+            </div>
+            <div class="feature">
+                <img src="images/istockphoto-1081869338-612x612.jpg" alt="Innovative Development">
+                <h2>Innovative Development</h2>
+                <p>Custom software and applications to meet unique needs.</p>
+            </div>
+            <div class="feature">
+                <img src="images/pexels-athena-2582937.jpg" alt="Cloud Solutions">
+                <h2>Cloud Solutions</h2>
+                <p>Seamless migration and optimization of cloud services.</p>
+            </div>
+        </section>        
 
-        <section id="scenarios">
-            <h2>Scenarios</h2>
-            <ul>
-                <li>What IT consulting services does TechWave Solutions offer?</li>
-                <li>How can I contact TechWave Solutions for a project consultation?</li>
-            </ul>
-        </section>
-
-        <section id="color-schema">
-            <h2>Color Schema</h2>
-            <ul>
-                <li><strong>Primary Color:</strong> #0044cc (Used for headers, navigation background, and call-to-action buttons.)</li>
-                <li><strong>Secondary Color:</strong> #f0f0f0 (Used for the main background and section dividers.)</li>
-            </ul>
-        </section>
-
-        <section id="typography">
-            <h2>Typography</h2>
-            <ul>
-                <li><strong>Heading Font:</strong> Arial, sans-serif (Used for all headers.)</li>
-                <li><strong>Body Font:</strong> Georgia, serif (Used for paragraphs and general content.)</li>
-            </ul>
-        </section>
-
-        <section id="wireframe">
-            <h2>Wireframe</h2>
-            <p>The wireframe diagrams for the home page layout are as follows:</p>
-            <h3>Mobile View</h3>
-            <p>A simplified stacked layout with a collapsible menu at the top, followed by the logo, a call-to-action section, and the footer.</p>
-            <h3>Desktop View</h3>
-            <p>A more expansive layout with a navigation bar, a hero image, a three-column section for services, and the footer at the bottom.</p>
+        <section class="cta-section">
+            <h2>Ready to Elevate Your Business?</h2>
+            <p>Contact us today and let's discuss how we can help your business succeed.</p>
+            <a href="contact.html" class="cta">Get in Touch</a>
         </section>
     </main>
 
     <footer>
-        <form>
-            <label for="email">Subscribe to Updates:</label>
-            <input type="email" id="email" placeholder="Your Email">
-            <button type="submit">Subscribe</button>
-        </form>
-        
-        <p>&copy; 2024 TechWave Solutions</p>
+        <p>&copy; <span id="year"></span> TechWave Solutions. All Rights Reserved.</p>
+        <p>Phone: +1 (123) 456-7890 | Email: <a href="mailto:contact@techwavesolutions.com">contact@techwavesolutions.com</a></p>
+        <ul class="footer-links">
+            <li><a href="attributions.html">Resource Attributions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
     </footer>
 </body>
-</html>
+
+</html>                 
