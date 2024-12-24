@@ -1,40 +1,35 @@
 // JavaScript for TechWave Solutions Website
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Hero Section Background Slider
-  const heroSection = document.getElementById("hero");
-  const images = [
-      "images/slide-img1.jpeg",
-      "images/slide-img2.jpg",
-      "images/slide-img3.jpg",
-  ];
-  let currentIndex = 0;
+    const heroSection = document.getElementById("hero");
+    const images = [
+        "images/slide-img1.jpeg",
+        "images/pexels-photo-1234567.jpeg",
+        "images/pexels-photo-2345678.jpeg"
+    ];
+    let currentIndex = 0;
 
-  function changeBackground() {
-      currentIndex = (currentIndex + 1) % images.length; // Loop through images
-      heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
-  }
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length; // Loop through images
+        heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+    }
 
-  // Change background every 5 seconds
-  setInterval(changeBackground, 5000);
+    // Change background every 5 seconds
+    setInterval(changeBackground, 5000);
+});
 
-  // Set current year in the footer
-  document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Set last modified date in the footer
-  const lastModifiedElement = document.getElementById('last-modified');
-  if (lastModifiedElement) {
-      lastModifiedElement.textContent = document.lastModified;
-  }
+  // Save footer year dynamically
+const year = new Date().getFullYear();
+localStorage.setItem('year', year);
+document.getElementById('year').textContent = localStorage.getItem('year');
+
 
   // Hamburger Menu Toggle
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-
-  hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active'));
-  });
+ // scripts/siteplan.js
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('show');
+});
 
   // Smooth Scrolling for Navigation Links
   const navLinksArray = document.querySelectorAll('.nav-links a');
@@ -94,4 +89,27 @@ document.addEventListener("DOMContentLoaded", () => {
           servicesContainer.appendChild(div);
       });
   }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach((img) => observer.observe(img));
+    } else {
+        lazyImages.forEach((img) => {
+            img.src = img.dataset.src;
+        });
+    }
 });
+
